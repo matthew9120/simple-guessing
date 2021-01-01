@@ -55,6 +55,8 @@ AppAsset::register($this);
 </footer>
 
 <?php $this->endBody() ?>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/guessing-connecting-with-api.js"></script>
 </body>
 </html>
 <?php $this->endPage() ?>
