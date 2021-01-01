@@ -5,7 +5,6 @@
 
 use app\widgets\Alert;
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
@@ -33,13 +32,6 @@ AppAsset::register($this);
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Strona główna (wymaga MySQLa)', 'url' => ['/site/index']],
-            ['label' => 'Bez MySQLa', 'url' => ['/site/nodb']]
         ],
     ]);
     NavBar::end();
